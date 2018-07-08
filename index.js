@@ -42,6 +42,10 @@ class ComplexNumber {
         return result;
     }
 
+    getConjugate(){
+        return new ComplexNumber(this.realPart, this.imaginaryPart*-1);
+    }
+
     getAdditiveInverse(){
         let realSquared = this.realPart * -1;
         let imaginarySquared = this.imaginaryPart* -1;
@@ -65,7 +69,7 @@ class ComplexNumber {
             && this.imaginaryPart === other.imaginaryPart;
     }
     toString(){
-        return `${this.realPart} +${this.imaginaryPart}i`;
+        return `${this.realPart} + ${this.imaginaryPart}i`;
     }
 
 }

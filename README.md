@@ -1,9 +1,34 @@
 # complex-number
-A simple complex number package that can add, multiply, get the additive and mulitplicative inverses and compare Complex Numbers.
 
-ComplexNumber has realPart and imaginaryPart.
+A complex number package that can add, multiply, get the additive and mulitplicative inverses, get the conjugate, and compare Complex Numbers.
 
-ComplexNumber has an add, multiply, and equals functions which take another complex number implementation.
+## Getting Started
 
-ComplexNumber has getAdditiveInverse and getMultiplicativeInverse which return Complex Numbers.
+There is an NPM package: complex-number.
 
+
+```
+npm i complex-number
+```
+
+### Example
+
+```
+const ComplexNumber  = require ('complex-number')
+
+let x  = new ComplexNumber(1,2);
+
+let conjugate = x.getConjugate();
+let additiveInverse = x.getAdditiveInverse();
+let multiplicativeInverse = x.getMultiplicativeInverse();
+
+// prints out false
+console.log(x.equals(conjugate).toString());
+
+// prints out 0 + 0i
+console.log(x.add(additiveInverse).toString());
+
+// prints out 1 + 0i
+console.log(x.multiply(multiplicativeInverse).toString());
+
+```
