@@ -1,0 +1,12 @@
+{
+  "name": "complex-number",
+  "version": "1.0.0",
+  "description": "A simple complex number package that can add, multiply, get the additive and mulitplicative inverses and compare Complex Numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Jared Gaston",
+  "license": "ISC"
+}
